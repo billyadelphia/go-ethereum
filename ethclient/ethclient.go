@@ -511,6 +511,17 @@ func (ec *Client) PendingCallContract(ctx context.Context, msg ethereum.CallMsg)
 	return hex, nil
 }
 
+// FinalizedCallContract executes a message call transaction using the EVM.
+// The state seen by the contract call is the finalized state.
+func (ec *Client) FinalizedCallContract(ctx context.Context, msg ethereum.CallMsg) ([]byte, error) {
+	var hex hexutil.Bytes
+	err := ec.c.CallContext(ctx, &hex, "eth_call", toCallArg(msg), "finalized")
+	if err != nil {
+		return nil, err
+	}
+	return hex, nil
+}
+
 // SuggestGasPrice retrieves the currently suggested gas price to allow a timely
 // execution of a transaction.
 func (ec *Client) SuggestGasPrice(ctx context.Context) (*big.Int, error) {
