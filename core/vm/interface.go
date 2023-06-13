@@ -19,9 +19,9 @@ package vm
 import (
 	"math/big"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/params"
+	"github.com/billyadelphia/go-ethereum/common"
+	"github.com/billyadelphia/go-ethereum/core/types"
+	"github.com/billyadelphia/go-ethereum/params"
 )
 
 // StateDB is an EVM database for full state querying.

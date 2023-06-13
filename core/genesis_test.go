@@ -22,14 +22,14 @@ import (
 	"reflect"
 	"testing"
 
+	"github.com/billyadelphia/go-ethereum/common"
+	"github.com/billyadelphia/go-ethereum/consensus/ethash"
+	"github.com/billyadelphia/go-ethereum/core/rawdb"
+	"github.com/billyadelphia/go-ethereum/core/vm"
+	"github.com/billyadelphia/go-ethereum/ethdb"
+	"github.com/billyadelphia/go-ethereum/params"
+	"github.com/billyadelphia/go-ethereum/trie"
 	"github.com/davecgh/go-spew/spew"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/consensus/ethash"
-	"github.com/ethereum/go-ethereum/core/rawdb"
-	"github.com/ethereum/go-ethereum/core/vm"
-	"github.com/ethereum/go-ethereum/ethdb"
-	"github.com/ethereum/go-ethereum/params"
-	"github.com/ethereum/go-ethereum/trie"
 )
 
 func TestInvalidCliqueConfig(t *testing.T) {

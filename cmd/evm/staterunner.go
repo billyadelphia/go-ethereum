@@ -22,12 +22,12 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/state"
-	"github.com/ethereum/go-ethereum/core/vm"
-	"github.com/ethereum/go-ethereum/eth/tracers/logger"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/tests"
+	"github.com/billyadelphia/go-ethereum/common"
+	"github.com/billyadelphia/go-ethereum/core/state"
+	"github.com/billyadelphia/go-ethereum/core/vm"
+	"github.com/billyadelphia/go-ethereum/eth/tracers/logger"
+	"github.com/billyadelphia/go-ethereum/log"
+	"github.com/billyadelphia/go-ethereum/tests"
 	"github.com/urfave/cli/v2"
 )
 

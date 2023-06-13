@@ -21,9 +21,9 @@ import (
 	"math/rand"
 	"sync"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/rlp"
+	"github.com/billyadelphia/go-ethereum/common"
+	"github.com/billyadelphia/go-ethereum/core/types"
+	"github.com/billyadelphia/go-ethereum/rlp"
 )
 
 type lesTxRelay struct {
